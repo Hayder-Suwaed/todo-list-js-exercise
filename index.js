@@ -5,7 +5,9 @@ function newTask(title, description) {
     complete: false,
 
     logState: function() {
-      console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
+      console.log(
+        `${this.title} has${this.complete ? " " : " not "}been completed`
+      );
     },
 
     markCompleted: function() {
@@ -17,7 +19,10 @@ function newTask(title, description) {
 
 // DRIVER CODE CHANGES BELOW
 
-const task1 = newTask("Clean Cat Litter", "Take all the 💩 out of the litter box");
+const task1 = newTask(
+  "Clean Cat Litter",
+  "Take all the 💩 out of the litter box"
+);
 const task2 = newTask("Do Laundry", "😨");
 const tasks = [task1, task2];
 
